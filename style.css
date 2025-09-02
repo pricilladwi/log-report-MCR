@@ -1,0 +1,73 @@
+:root {
+  --panel-radius: 22px;
+  --inner-radius: 18px;
+  --panel-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  --inner-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+body { 
+  font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+.report-card {
+  border-radius: var(--panel-radius);
+  box-shadow: var(--panel-shadow);
+  padding: 18px;
+  background:
+    radial-gradient(1200px 800px at -200px 200px, #80C4E9 0%, rgba(124,58,237,0) 60%),
+    radial-gradient(900px 600px at 120% 10%, #7886C7 0%, rgba(245,158,11,0) 55%),
+    linear-gradient(135deg, #FFF6E9 60%, #10375C 100%);
+}
+
+.form-panel {
+  border-radius: var(--inner-radius);
+  box-shadow: var(--inner-shadow);
+}
+
+.info-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: var(--inner-radius);
+  background:
+    radial-gradient(1200px 800px at -200px 200px, #80C4E9 0%, rgba(124, 58, 237, 0) 60%),
+    radial-gradient(900px 600px at 120% 10%, #7886C7 0%, rgba(245,158,11,0) 55%),
+    linear-gradient(135deg, #FFF2F2 60%, #10375C 100%);
+}
+
+.report-form .input,
+.report-form .textarea {
+  background-color: #f3f4f6; 
+  border-color: #d1d5db;
+}
+
+.report-form .input:focus,
+.report-form .textarea:focus {
+  background-color: #fff;
+}
+
+.btn-primary {
+  height: 48px;
+  border-radius: 10px;
+  background-color: #143d79; 
+}
+
+.btn-primary:hover {
+  background-color: #0f2f5e;
+}
+
+.info-panel h1 { 
+  letter-spacing: 0.5px;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: clamp(28px, 8vw, 64px);
+  line-height: 1.1;
+  overflow-wrap: anywhere; 
+}
+
+@media (min-width: 1024px) {
+  .info-panel { padding: 64px; }
+  .form-panel { padding: 48px; }
+}
